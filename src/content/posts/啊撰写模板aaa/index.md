@@ -1,15 +1,14 @@
 ---
-title: 操作代码记录
-published: 2024-09-16
-description: "Linux系统, Del数据, docking"
+title: 这里写标题
+published: 2024-09-17
+description: "这是一个撰写模板"
 image: "./1.jpg"
-tags: [Linux,del,docking]
-category: "代码"
+tags: [Linux,del,这里写标签]
+category: "这里写分离"
 draft: false
 lang: ""
 ---
 
 ## 
 ```python 
-
-    ```
+```
