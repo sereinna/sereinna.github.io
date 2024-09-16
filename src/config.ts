@@ -47,29 +47,32 @@ export const navBarConfig: NavBarConfig = {
   ],
 }
 
-export const profileConfig: ProfileConfig = {
-  avatar: 'assets/images/touxiang.png',  // Relative to the /src directory. Relative to the /public directory if it starts with '/'
-  name: 'serein',
-  bio: '醉携仙人乘风去，痛饮狂歌岁且长',
-  links: [
-    {
-      name: 'Twitter',
-      icon: 'fa6-brands:twitter',       // Visit https://icones.js.org/ for icon codes
-                                        // You will need to install the corresponding icon set if it's not already included
-                                        // `pnpm add @iconify-json/<icon-set-name>`
-      url: 'https://twitter.com',
-    },
-    {
-      name: 'Steam',
-      icon: 'fa6-brands:steam',
-      url: 'https://store.steampowered.com',
-    },
-    {
-      name: 'GitHub',
-      icon: 'fa6-brands:github',
-      url: 'https://github.com/sereinna',
-    },
-  ],
+export const profileConfig: ProfileConfig = {  
+  avatar: 'assets/images/touxiang.png',  // Relative to the /src directory. Relative to the /public directory if it starts with '/'  
+  name: 'serein',  
+  bio: '醉携仙人乘风去，痛饮狂歌岁且长',  
+  links: [  
+    {  
+      name: 'Twitter',  
+      icon: 'fa6-brands:twitter',  
+      url: 'https://x.com/starparyer',  
+    },  
+    {  
+      name: 'Steam',  
+      icon: 'fa6-brands:steam',  
+      url: 'https://steamcommunity.com/profiles/76561198864179734/',  
+    },  
+    {  
+      name: 'GitHub',  
+      icon: 'fa6-brands:github',  
+      url: 'https://github.com/sereinna',  
+    },  
+    {  
+      name: 'Bilibili',  
+      icon: 'fa6-brands:bilibili',     // Ensure you have the proper icon set or adjust according to available icons  
+      url: 'https://space.bilibili.com/286589870', // Replace <YourUserID> with your actual Bilibili user ID or space ID  
+    },  
+  ],  
 }
 
 export const licenseConfig: LicenseConfig = {
