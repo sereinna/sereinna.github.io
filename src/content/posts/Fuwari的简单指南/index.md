@@ -17,7 +17,7 @@ draft: false
 ```yaml
 ---
 title: 我的第一篇博客文章
-published: 2023-09-16
+published: 2024-09-16
 description: 这是我新Astro博客的第一篇文章。
 image: ./cover.jpg
 tags: [blog, write]
