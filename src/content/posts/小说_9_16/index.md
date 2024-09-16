@@ -3,7 +3,7 @@ title: 第一日
 published: 2024-09-16
 description: "try"
 image: "./183685571.jpg"
-tags: [记录，日常]
+tags: [记录,日常]
 category: 日常
 draft: false
 ---

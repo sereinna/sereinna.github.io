@@ -3,7 +3,7 @@ title: Fuwari的简单指南
 published: 2024-09-16
 description: "如何使用此博客模板。"
 image: "./tiedao.jpeg"
-tags: [Fuwari]
+tags: [Fuwari,指南]
 category: 指南
 draft: false
 ---

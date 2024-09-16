@@ -3,7 +3,7 @@ title: Fuwari的简单指南2
 published: 2024-09-16
 description: "如何修改blog信息"
 image: "./tai.jpeg"
-tags: [Fuwari]
+tags: [Fuwari, 指南]
 category: 指南
 draft: false
 ---
