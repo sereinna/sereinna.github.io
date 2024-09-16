@@ -1,8 +1,8 @@
 ---
 title: Fuwari的简单指南
-published: 2024-04-01
+published: 2024-09-16
 description: "如何使用此博客模板。"
-image: "./cover.jpeg"
+image: "./tiedao.jpeg"
 tags: [Fuwari]
 category: 示例
 draft: false
@@ -17,11 +17,11 @@ draft: false
 ```yaml
 ---
 title: 我的第一篇博客文章
-published: 2023-09-09
+published: 2023-09-016
 description: 这是我新Astro博客的第一篇文章。
 image: ./cover.jpg
-tags: [Foo, Bar]
-category: 前端
+tags: [blog, write]
+category: blog撰写
 draft: false
 ---
 ```
