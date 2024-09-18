@@ -22,5 +22,6 @@
   "terminal.integrated.automationProfile.windows": {},  
   "terminal.integrated.env.windows": {  
     "PROMPT": "$env:CONDA_DEFAULT_ENV > "  
-  }  
+  },  
+  "terminal.integrated.shell.windows": "C:\\Anaconda3\\Scripts\\conda.exe shell.windows.exe"  
 }

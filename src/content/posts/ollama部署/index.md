@@ -110,7 +110,7 @@ pip install -r requirements.txt -U
 运行启动脚本：
 
 ```bash
-start.bat
+ .\start_windows.bat
 ```
 
 在 [http://localhost:8080/](http://localhost:8080/) 上启动并运行 Open WebUI 
