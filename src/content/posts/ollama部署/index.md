@@ -17,6 +17,11 @@ lang: ""
 
 :::
 
+##  下载并启动win版本的ollma
+下载 `ollama` https://ollama.com/
+一键安装并启动且后台运行
+
+
 ##  下载并运行一个模型
 ```python 
 ollama run xxx
