@@ -73,11 +73,11 @@ setx OLLAMA_MODELS "E:\ollama" /M
 
 ##  webui的使用(之后再说)
 
-### 安装docker
+### way_1安装docker
 [docker](https://desktop.docker.com/win/stable/amd64/Docker%20Desktop%20Installer.exe)
 
 
-### python安装
+### way_2python安装
 
 对于 Windows：
 
