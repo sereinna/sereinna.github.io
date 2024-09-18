@@ -4,7 +4,7 @@ published: 2024-09-17
 description: "这是一个撰写模板"
 image: "./1.jpg"
 tags: [Linux,del,这里写标签]
-category: "这里写分离"
+category: "这里写分类"
 draft: false
 lang: ""
 ---

@@ -3,7 +3,7 @@ title: sdf文件生成
 published: 2024-09-17
 description: "如何批量根据smiles生成sdf 3d文件"
 image: "./8.jpg"
-tags: [python,smiles,docking]
+tags: [python,docking]
 category: "代码"
 draft: false
 lang: ""

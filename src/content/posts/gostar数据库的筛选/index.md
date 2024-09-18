@@ -1,7 +1,7 @@
 ---
-title: 如何筛选一个gostar数据库并从中提取蛋白-配体作用信息
+title: 大数据库蛋白-配体作用数据提取
 published: 2024-09-17
-description: "利用python,navicat对一个大规模的数据库进行数据抽取及其筛选"
+description: "如何筛选一个gostar数据库并从中提取蛋白-配体作用信息,并利用python,navicat对其进行数据抽取及其筛选"
 image: "./7.jpg"
 tags: [Linux,del,docking]
 category: "代码"
