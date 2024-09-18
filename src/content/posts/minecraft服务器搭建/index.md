@@ -1,6 +1,6 @@
 ---
 title: minecraft服务器搭建
-published: 2024-09-17
+published: 2024-09-18
 description: "一个基于linux的1.21的minecraft服务器的一键搭建流程"
 image: "./120709207_p0.jpg"
 tags: [minecraft,linux]
