@@ -1,5 +1,5 @@
 ---
-title: g16运行脚本
+title: g16安装脚本及集群部署
 published: 2024-09-18
 description: "如何在linux系统安装Gaussian高斯g16并在超算等多集群进行启动部署计算"
 image: "./117158168_p0.jpg"
