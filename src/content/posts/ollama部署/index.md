@@ -118,4 +118,5 @@ pip install -r requirements.txt -U
 
 ### 添加官方api
 把之前的open-ai的key和web填入 `外部链接`--`OpenAI API`
-[Ollama 部署图片](src/content/posts/ollama部署/1726639563236.jpg)
+![Ollama 部署图片](./1726639563236.jpg)
+
