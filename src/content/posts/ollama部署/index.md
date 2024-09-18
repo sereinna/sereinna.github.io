@@ -75,3 +75,43 @@ setx OLLAMA_MODELS "E:\ollama" /M
 
 ### 安装docker
 [docker](https://desktop.docker.com/win/stable/amd64/Docker%20Desktop%20Installer.exe)
+
+
+### python安装
+
+对于 Windows：
+
+```bash
+git clone https://github.com/open-webui/open-webui.git
+cd open-webui
+
+copy .env.example .env
+
+npm install
+npm run build
+
+cd .\backend
+```
+
+使用 Conda 作为开发环境进行安装：
+
+```bash
+# 创建并激活 Conda 环境
+conda create --name open-webui-env python=3.11
+conda activate open-webui-env
+```
+
+执行以下命令安装依赖：
+
+```bash
+pip install -r requirements.txt -U
+```
+
+运行启动脚本：
+
+```bash
+start.bat
+```
+
+在 [http://localhost:8080/](http://localhost:8080/) 上启动并运行 Open WebUI 
+
