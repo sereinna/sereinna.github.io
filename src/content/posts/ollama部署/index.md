@@ -29,8 +29,8 @@ setx OLLAMA_MODELS "E:\ollama" /M
 
 ##  ollama命令行设置
 
-| 属性        | 描述                                                                                   |
-| ----------- | -------------------------------------------------------------------------------------- |
+| 属性          | 描述                                                                                                                                                               |
+| ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | `serve`     | 启动 ollama 服务。                                                                      |
 | `create`    | 使用 Modelfile 创建一个模型。这可能与定义模型架构或设置有关。                            |
 | `show`      | 显示特定模型的信息。                                                                    |
@@ -47,6 +47,29 @@ setx OLLAMA_MODELS "E:\ollama" /M
 ##  ollama下载的模型与huggingface的模型的区别
 通常情况下，Qwen模型的表示方法为Qwen1.5-4B-Chat
 在Ollama中，Qwen指代的是与Hugging Face上的Qwen1_5-4B-Chat-q4_0.gguf模型相对应的版本，这是一个经过4位量化处理的模型
+
+
+
+##  ollama模型列表
+| Model                | Parameters | Size  | Download                       |
+|----------------------|------------|-------|---------------------------------|
+| Llama 3.1            | 8B         | 4.7GB | `ollama run llama3.1`           |
+| Llama 3.1            | 70B        | 40GB  | `ollama run llama3.1:70b`       |
+| Llama 3.1            | 405B       | 231GB | `ollama run llama3.1:405b`      |
+| Phi 3 Mini           | 3.8B       | 2.3GB | `ollama run phi3`               |
+| Phi 3 Medium         | 14B        | 7.9GB | `ollama run phi3:medium`        |
+| Gemma 2              | 2B         | 1.6GB | `ollama run gemma2:2b`          |
+| Gemma 2              | 9B         | 5.5GB | `ollama run gemma2`             |
+| Gemma 2              | 27B        | 16GB  | `ollama run gemma2:27b`         |
+| Mistral              | 7B         | 4.1GB | `ollama run mistral`            |
+| Moondream 2          | 1.4B       | 829MB | `ollama run moondream`          |
+| Neural Chat          | 7B         | 4.1GB | `ollama run neural-chat`        |
+| Starling             | 7B         | 4.1GB | `ollama run starling-lm`        |
+| Code Llama           | 7B         | 3.8GB | `ollama run codellama`          |
+| Llama 2 Uncensored   | 7B         | 3.8GB | `ollama run llama2-uncensored`  |
+| LLaVA                | 7B         | 4.5GB | `ollama run llava`              |
+| Solar                | 10.7B      | 6.1GB | `ollama run solar`              |
+
 
 ##  webui的使用(之后再说)
 
