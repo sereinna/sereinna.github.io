@@ -69,8 +69,9 @@ setx OLLAMA_MODELS "E:\ollama" /M
 | Llama 2 Uncensored   | 7B         | 3.8GB | `ollama run llama2-uncensored`  |
 | LLaVA                | 7B         | 4.5GB | `ollama run llava`              |
 | Solar                | 10.7B      | 6.1GB | `ollama run solar`              |
-
-
+| qwen2                | 7B         | xGB   | `ollama run qwen2:7b`           |
+| qwen2                | 7B         | xGB   | `ollama run qwen2:7b`           |
+| CodeGemma            | 8.54B      | 5.0GB | `ollama run codegemma `         |
 ##  webui的使用(之后再说)
 
 ### way_1安装docker
@@ -115,3 +116,6 @@ pip install -r requirements.txt -U
 
 在 [http://localhost:8080/](http://localhost:8080/) 上启动并运行 Open WebUI 
 
+### 添加官方api
+把之前的open-ai的key和web填入 `外部链接`--`OpenAI API`
+[Ollama 部署图片](src/content/posts/ollama部署/1726639563236.jpg)
