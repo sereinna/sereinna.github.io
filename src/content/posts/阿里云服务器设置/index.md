@@ -42,8 +42,9 @@ sudo curl -fsSL http://file.tickstep.com/apt/pgp | gpg --dearmor | sudo tee /etc
 ```bash
 cd aliyunpan-v0.3.2-linux-amd64
 ./aliyunpan
-```
 aliyunpan > help
+```
+
 
 | 命令           | 描述                           |  
 | -------------- | --------------------------------- |  
