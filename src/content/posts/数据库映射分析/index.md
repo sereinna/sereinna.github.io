@@ -1,5 +1,6 @@
 ---
 title: 基于Tanimoto核的t-SNE算法
+published: 2024-09-23
 description: "使用基于Tanimoto核的t-SNE算法对蛋白分子数据库可视化分子空间的高维特征"
 image: "./120005527_p0_master1200.jpg"
 tags: [数据集,分子,可视化,python]
