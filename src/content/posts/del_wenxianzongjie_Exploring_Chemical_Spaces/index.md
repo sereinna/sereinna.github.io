@@ -1,7 +1,7 @@
 ---
-title: Exploring Chemical Spaces in the Billion Range Is Docking a Computational Alternative to DNA-Encoded Libraries?
+title: 对接虚筛的一篇del论文
 published: 2024-09-23
-description: "探索十亿范围内的化学空间：对接是 DNA 编码文库的计算替代方案吗？"
+description: "探索十亿范围内的化学空间：对接是 DNA 编码文库的计算替代方案吗？\Exploring Chemical Spaces in the Billion Range Is Docking a Computational Alternative to DNA-Encoded Libraries"
 image: "./117146100_p0.jpg"
 tags: [docking,del,文献阅读]
 category: "论文"
