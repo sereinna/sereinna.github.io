@@ -108,7 +108,7 @@ LLM展现出作为强大且多功能的分子设计引擎的潜力。
 ### 基础提示词 (A-H):
 
 | 属性 | 描述 | 中文翻译 |
-|------|------|----------|
+|---------|------|----------|
 |  A  | similar molecules by changing one or two atoms or bonds to produce closely related structures | 通过改变一两个原子或键来产生密切相关的结构，生成相似分子 |
 |  B  | similar molecules by tweaking only the side chains | 仅通过调整侧链来生成相似分子 |
 |  C  | similar molecules with minimal structural changes to find similar but new candidates | 通过最小的结构变化来寻找相似但新的候选分子 |
@@ -121,7 +121,7 @@ LLM展现出作为强大且多功能的分子设计引擎的潜力。
 ### 引导生成提示词 (I-P):
 
 | 属性 | 描述 | 中文翻译 |
-|------|------|----------|
+|---------|------|----------|
 |  I  | Similar molecules by changing one or two atoms or bonds to produce closely related structures focusing on incorporating electron donating groups (EDGs) to find new candidates | 通过改变一两个原子或键来产生密切相关的结构，重点是引入电子给体基团(EDG)以寻找新的候选分子 |
 |  J  | Similar molecules by tweaking only the side chains to produce closely related structures focusing on incorporating electron donating groups (EDGs) to find new candidates | 仅通过调整侧链来产生密切相关的结构，重点是引入电子给体基团(EDG)以寻找新的候选分子 |
 |  K  | Similar molecules with minimal structural changes to produce closely related structures focusing on incorporating electron donating groups (EDGs) to find new candidates | 通过最小的结构变化来产生密切相关的结构，重点是引入电子给体基团(EDG)以寻找新的候选分子 |
@@ -134,7 +134,7 @@ LLM展现出作为强大且多功能的分子设计引擎的潜力。
 ### 控制生成提示词 (Q-S):
 
 | 属性 | 描述 | 中文翻译 |
-|------|------|----------|
+|---------|------|----------|
 | Q | Barely similar (very low Tanimoto similarity) molecules compared to the given parent molecule by altering atoms, bonds, functional groups, or making other changes to find new candidates | 与给定的父分子相比，通过改变原子、键、官能团或进行其他变化来寻找几乎不相似（非常低的Tanimoto相似度）的新候选分子 |
 | R | Marginally similar (low Tanimoto similarity) molecules compared to the given parent molecule by altering atoms, bonds, functional groups, or making other changes to find new candidates | 与给定的父分子相比，通过改变原子、键、官能团或进行其他变化来寻找略微相似（低Tanimoto相似度）的新候选分子 |
 | S | Moderately similar (moderate Tanimoto similarity) molecules compared to the given parent molecule by altering atoms, bonds, functional groups, or making other changes to find new candidates | 与给定的父分子相比，通过改变原子、键、官能团或进行其他变化来寻找中等相似（中等Tanimoto相似度）的新候选分子 |
