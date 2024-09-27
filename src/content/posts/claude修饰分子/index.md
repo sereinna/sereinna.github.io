@@ -138,14 +138,19 @@ LLM展现出作为强大且多功能的分子设计引擎的潜力。
 | Q | Barely similar (very low Tanimoto similarity) molecules compared to the given parent molecule by altering atoms, bonds, functional groups, or making other changes to find new candidates | 与给定的父分子相比，通过改变原子、键、官能团或进行其他变化来寻找几乎不相似（非常低的Tanimoto相似度）的新候选分子 |
 | R | Marginally similar (low Tanimoto similarity) molecules compared to the given parent molecule by altering atoms, bonds, functional groups, or making other changes to find new candidates | 与给定的父分子相比，通过改变原子、键、官能团或进行其他变化来寻找略微相似（低Tanimoto相似度）的新候选分子 |
 | S | Moderately similar (moderate Tanimoto similarity) molecules compared to the given parent molecule by altering atoms, bonds, functional groups, or making other changes to find new candidates | 与给定的父分子相比，通过改变原子、键、官能团或进行其他变化来寻找中等相似（中等Tanimoto相似度）的新候选分子 |
+
 这些提示词都是在基础系统提示词的基础上使用的。完整的提示词结构如下：
 
 
 ### 基础系统提示词
-系统提示词：
+- 系统提示词：
+
 "You are a chemoinformatics expert that can generate new molecules. Please provide only the Python formatted list of SMILES strings, like [SMILES1, SMILES2, SMILES3] without any additional explanations or text."
-任务提示词模板：
+
+- 任务提示词模板：
+
 "Given the molecule with SMILES representation 'smiles', generate n molecules that are prompt_detail. Respond with just the SMILES strings as elements of a Python list."
-其中，'smiles'会被替换为特定的父分子SMILES表示，n会被替换为10（要生成的分子数量），prompt_detail会被替换为上述A-S中的某一个具体提示词内容。
+
+- 其中，'smiles'会被替换为特定的父分子SMILES表示，n会被替换为10（要生成的分子数量），prompt_detail会被替换为上述A-S中的某一个具体提示词内容。
 
 这种结构允许研究者系统地测试不同类型的分子修改指令，从而评估Claude模型在分子设计任务中的表现和能力。
