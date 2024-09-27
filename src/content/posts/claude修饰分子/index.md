@@ -109,27 +109,27 @@ LLM展现出作为强大且多功能的分子设计引擎的潜力。
 
 | 属性 | 描述 | 中文翻译 |
 |------|------|----------|
-| A | similar molecules by changing one or two atoms or bonds to produce closely related structures | 通过改变一两个原子或键来产生密切相关的结构，生成相似分子 |
-| B | similar molecules by tweaking only the side chains | 仅通过调整侧链来生成相似分子 |
-| C | similar molecules with minimal structural changes to find similar but new candidates | 通过最小的结构变化来寻找相似但新的候选分子 |
-| D | similar molecules with slight variations on functional groups while maintaining the backbone structure | 在保持骨架结构的同时，对官能团进行轻微变化，生成相似分子 |
-| E | completely different molecules by changing multiple atoms or bonds | 通过改变多个原子或键来生成完全不同的分子 |
-| F | completely different molecules by significantly altering the core structure and introducing completely new functional groups | 通过显著改变核心结构并引入全新的官能团来生成完全不同的分子 |
-| G | completely different molecules that significantly vary in size and functional groups | 生成在大小和官能团方面有显著差异的完全不同分子 |
-| H | completely different molecules with significant structural changes to find new candidates | 通过显著的结构变化来寻找新的候选分子，生成完全不同的分子 |
+|  A  | similar molecules by changing one or two atoms or bonds to produce closely related structures | 通过改变一两个原子或键来产生密切相关的结构，生成相似分子 |
+|  B  | similar molecules by tweaking only the side chains | 仅通过调整侧链来生成相似分子 |
+|  C  | similar molecules with minimal structural changes to find similar but new candidates | 通过最小的结构变化来寻找相似但新的候选分子 |
+|  D  | similar molecules with slight variations on functional groups while maintaining the backbone structure | 在保持骨架结构的同时，对官能团进行轻微变化，生成相似分子 |
+|  E  | completely different molecules by changing multiple atoms or bonds | 通过改变多个原子或键来生成完全不同的分子 |
+|  F  | completely different molecules by significantly altering the core structure and introducing completely new functional groups | 通过显著改变核心结构并引入全新的官能团来生成完全不同的分子 |
+|  G  | completely different molecules that significantly vary in size and functional groups | 生成在大小和官能团方面有显著差异的完全不同分子 |
+|  H  | completely different molecules with significant structural changes to find new candidates | 通过显著的结构变化来寻找新的候选分子，生成完全不同的分子 |
 
 ### 引导生成提示词 (I-P):
 
 | 属性 | 描述 | 中文翻译 |
 |------|------|----------|
-| I | Similar molecules by changing one or two atoms or bonds to produce closely related structures focusing on incorporating electron donating groups (EDGs) to find new candidates | 通过改变一两个原子或键来产生密切相关的结构，重点是引入电子给体基团(EDG)以寻找新的候选分子 |
-| J | Similar molecules by tweaking only the side chains to produce closely related structures focusing on incorporating electron donating groups (EDGs) to find new candidates | 仅通过调整侧链来产生密切相关的结构，重点是引入电子给体基团(EDG)以寻找新的候选分子 |
-| K | Similar molecules with minimal structural changes to produce closely related structures focusing on incorporating electron donating groups (EDGs) to find new candidates | 通过最小的结构变化来产生密切相关的结构，重点是引入电子给体基团(EDG)以寻找新的候选分子 |
-| L | Similar molecules with slight variations on functional groups while maintaining the backbone structure to produce closely related structures focusing on incorporating electron donating groups (EDGs) to find new candidates | 在保持骨架结构的同时，对官能团进行轻微变化来产生密切相关的结构，重点是引入电子给体基团(EDG)以寻找新的候选分子 |
-| M | Similar molecules by changing one or two atoms or bonds to produce closely related structures focusing on incorporating electron withdrawing groups (EWGs) to find new candidates | 通过改变一两个原子或键来产生密切相关的结构，重点是引入电子吸引基团(EWG)以寻找新的候选分子 |
-| N | Similar molecules by tweaking only the side chains to produce closely related structures focusing on incorporating electron withdrawing groups (EWGs) to find new candidates | 仅通过调整侧链来产生密切相关的结构，重点是引入电子吸引基团(EWG)以寻找新的候选分子 |
-| O | Similar molecules with minimal structural changes to produce closely related structures focusing on incorporating electron withdrawing groups (EWGs) to find new candidates | 通过最小的结构变化来产生密切相关的结构，重点是引入电子吸引基团(EWG)以寻找新的候选分子 |
-| P | Similar molecules with slight variations on functional groups while maintaining the backbone structure to produce closely related structures focusing on incorporating electron withdrawing groups (EWGs) to find new candidates | 在保持骨架结构的同时，对官能团进行轻微变化来产生密切相关的结构，重点是引入电子吸引基团(EWG)以寻找新的候选分子 |
+|  I  | Similar molecules by changing one or two atoms or bonds to produce closely related structures focusing on incorporating electron donating groups (EDGs) to find new candidates | 通过改变一两个原子或键来产生密切相关的结构，重点是引入电子给体基团(EDG)以寻找新的候选分子 |
+|  J  | Similar molecules by tweaking only the side chains to produce closely related structures focusing on incorporating electron donating groups (EDGs) to find new candidates | 仅通过调整侧链来产生密切相关的结构，重点是引入电子给体基团(EDG)以寻找新的候选分子 |
+|  K  | Similar molecules with minimal structural changes to produce closely related structures focusing on incorporating electron donating groups (EDGs) to find new candidates | 通过最小的结构变化来产生密切相关的结构，重点是引入电子给体基团(EDG)以寻找新的候选分子 |
+|  L  | Similar molecules with slight variations on functional groups while maintaining the backbone structure to produce closely related structures focusing on incorporating electron donating groups (EDGs) to find new candidates | 在保持骨架结构的同时，对官能团进行轻微变化来产生密切相关的结构，重点是引入电子给体基团(EDG)以寻找新的候选分子 |
+|  M  | Similar molecules by changing one or two atoms or bonds to produce closely related structures focusing on incorporating electron withdrawing groups (EWGs) to find new candidates | 通过改变一两个原子或键来产生密切相关的结构，重点是引入电子吸引基团(EWG)以寻找新的候选分子 |
+|  N  | Similar molecules by tweaking only the side chains to produce closely related structures focusing on incorporating electron withdrawing groups (EWGs) to find new candidates | 仅通过调整侧链来产生密切相关的结构，重点是引入电子吸引基团(EWG)以寻找新的候选分子 |
+|  O  | Similar molecules with minimal structural changes to produce closely related structures focusing on incorporating electron withdrawing groups (EWGs) to find new candidates | 通过最小的结构变化来产生密切相关的结构，重点是引入电子吸引基团(EWG)以寻找新的候选分子 |
+|  P  | Similar molecules with slight variations on functional groups while maintaining the backbone structure to produce closely related structures focusing on incorporating electron withdrawing groups (EWGs) to find new candidates | 在保持骨架结构的同时，对官能团进行轻微变化来产生密切相关的结构，重点是引入电子吸引基团(EWG)以寻找新的候选分子 |
 
 ### 控制生成提示词 (Q-S):
 
