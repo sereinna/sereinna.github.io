@@ -9,15 +9,12 @@ draft: false
 lang: ""
 ---
 
-# Setting Up Your Website for Search Engines  
-
 ## 前言  
 
 :::tip  
 准备工作 xml文件 `sitemap.xml`，HTML验证文件 `googleexxxxxx.html`，robots`robots.txt`  
-:::  
 
----  
+:::  
 
 ## HTML 权限验证文件  
 
