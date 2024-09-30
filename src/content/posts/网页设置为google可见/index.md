@@ -2,7 +2,7 @@
 title: 设置网页为google可搜索
 published: 2024-09-30
 description: "如何把自己的网页设置为google站点地图可见"
-image: "./112268841.jpg"
+image: "./122670348_p0.png"
 tags: [网页]
 category: "指南"
 draft: false
