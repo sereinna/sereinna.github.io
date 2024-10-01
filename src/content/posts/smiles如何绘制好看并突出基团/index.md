@@ -191,3 +191,6 @@ output_dir = '/home/tim/hmt/del_picture/smiles'  # 输出文件夹
 # 可以在这里快速设置需要高亮的原子和颜色
 process_smiles_file(file_path, smiles_column, output_dir, HIGHLIGHT_ATOMS, ATOM_COLORS)
 ```
+
+## 效果图
+![smiles 图片](./TFGMHRKL.svg)
