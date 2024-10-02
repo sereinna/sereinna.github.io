@@ -1,0 +1,107 @@
+---
+title: pymol蛋白图绘制
+published: 2024-10-02
+description: "如何使用pymol绘制好看的蛋白质-配体相互作用图"
+image: "./122704793_p0.jpg"
+tags: [pymol,图]
+category: "指南"
+draft: false
+lang: ""
+---
+
+
+:::tip
+准备工作 蛋白质 `pdb`，配体 `mol2`，画图软件 `pymol`
+:::
+
+
+# 前言
+本文介绍了如何使用 PyMOL 绘制蛋白质的远景图和近景图，包括设置显示模式、调整颜色和参数，以及标记相互作用残基等步骤。
+
+# 流程
+
+## 远景图
+
+```bash
+# 加载蛋白质结构
+load "E:/del/aaai/hanqun/smiles_picture/3p3h_protein.pdb", 3p3h_protein
+
+# 加载配体结构
+load "E:/del/aaai/hanqun/smiles_picture/docked_456.mol2", docked_456
+
+# 复制蛋白质对象
+create 3p3h_protein2, 3p3h_protein
+
+# 一个设置为卡通模式
+show cartoon, 3p3h_protein
+
+# 另一个展示为表面
+show surface, 3p3h_protein2
+
+# 配体展示为棍状
+show sticks, docked_456
+
+# 调整颜色
+# 蛋白改为浅色
+color white, 3p3h_protein
+color white, 3p3h_protein2
+
+# 小分子（配体）改为黄色
+color yellow, docked_456
+
+# 设置参数
+# 设置 cartoon_gap_cutoff 为 0
+set cartoon_gap_cutoff, 0
+
+# 调整表面透明度
+set transparency, 0.5, 3p3h_protein2
+
+# 设置背景为白色
+bg_color white
+
+# 使用花式螺旋
+set cartoon_fancy_helices, 1
+
+# 渲染和保存图像（可选）
+# 渲染图像
+ray 1000, 1000
+
+# 保存图片
+png "E:/del/aaai/hanqun/smiles_picture/distant_view.png", dpi=300
+```
+
+## 近景图
+
+```bash
+# 选择与配体4Å范围内的相互作用残基
+select interacting_residues, (3p3h_protein within 4 of docked_456)
+
+# 显示相互作用残基为棍状
+show sticks, interacting_residues
+
+# 计算并显示氢键和盐桥
+# 计算并显示氢键（距离小于3.2Å）
+distance hydrogen_bonds, (docked_456 and (name O+N)), (interacting_residues and (name O+N)), cutoff=3.2
+
+# 计算并显示盐桥（距离小于4.0Å）
+distance salt_bridges, (docked_456 and (resn ARG+LYS)), (3p3h_protein and (resn ASP+GLU)), cutoff=4.0
+
+# 打开序列视图并显示序列编号
+set seq_view, 1
+set seq_view_label_mode, 1
+
+# 标记相互作用残基的名称和编号
+label interacting_residues, "%s%s" % (resn, resi)
+
+# 去除渲染阴影
+set ray_shadows, 0
+
+# 隐藏特定测量的标签（如有）
+hide labels, measure03
+
+# 渲染图像
+ray 1000, 1000
+
+# 保存图片
+png "E:/del/aaai/hanqun/smiles_picture/closeup_view.png", dpi=300
+```
