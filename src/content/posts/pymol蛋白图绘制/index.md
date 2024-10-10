@@ -99,6 +99,15 @@ set ray_shadows, 0
 # 隐藏特定测量的标签（如有）
 hide labels, measure03
 
+# 制作选中原了的假原子
+pseudoatom center 1,sele
+
+# 新建链条
+create chainABC, chain A or chain B or chain C
+
+# 同时将his_center和ligand_center的球体大小设置为0.7
+set sphere_scale, 0.7, his_center or ligand_center  
+
 # 渲染图像
 ray 1000, 1000
 
