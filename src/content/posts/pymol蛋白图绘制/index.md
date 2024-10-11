@@ -78,6 +78,13 @@ select residue_d88, chain D and resi 88
 show sticks, residue_d88
 select selected_residues, (chain D and resi 88 and resn D) or (chain D and resi 140 and resn N) 
 
+select check_residue, chain D and resi 88
+select selected_residues, (chain D and resi 88) or (chain D and resi 140)
+
+create new_object, chain D and resi 140 and resn N
+
+
+
 
 # 选择与配体4Å范围内的相互作用残基
 select interacting_residues, (3p3h_protein within 4 of docked_456)
