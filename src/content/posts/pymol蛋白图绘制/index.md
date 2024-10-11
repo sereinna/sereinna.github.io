@@ -1,6 +1,6 @@
 ---
 title: pymol蛋白图绘制
-published: 2024-10-02
+published: 2024-09-18
 description: "如何使用pymol绘制好看的蛋白质-配体相互作用图"
 image: "./122704793_p0.jpg"
 tags: [pymol,图]
@@ -73,6 +73,12 @@ png "E:/del/aaai/hanqun/smiles_picture/distant_view.png", dpi=300
 ## 近景图
 
 ```bash
+# 选择残基
+select residue_d88, chain D and resi 88
+show sticks, residue_d88
+select selected_residues, (chain D and resi 88 and resn D) or (chain D and resi 140 and resn N) 
+
+
 # 选择与配体4Å范围内的相互作用残基
 select interacting_residues, (3p3h_protein within 4 of docked_456)
 
