@@ -61,3 +61,9 @@ aliyunpan > help
 | `share`       | 分享文件/目录                  |  
 | `sync`        | 同步备份功能                   |  
 | `upload, u`   | 上传文件/目录                  |
+
+## 服务器远程同步举例
+
+```bash
+sync start -ldir "/home/tmh/task" -pdir "/task" -mode "upload"
+```
