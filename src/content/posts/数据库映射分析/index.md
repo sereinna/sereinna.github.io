@@ -84,3 +84,74 @@ plt.xlabel("t-SNE 1")
 plt.ylabel("t-SNE 2")
 plt.show()
 ```
+
+
+### 图像实例
+```python
+import pandas as pd
+from rdkit import Chem
+from rdkit.Chem import AllChem
+from sklearn.manifold import TSNE
+import matplotlib.pyplot as plt
+from scipy.spatial.distance import pdist, squareform
+import numpy as np
+from tqdm import tqdm  # 导入 tqdm 库以显示进度条
+
+# 定义颜色
+colors = ['#845ec2', '#4b4453', '#b0a8b9', '#00896f', '#00c0a3']
+
+# 加载所有文件，并仅读取前10%的行
+file_paths = [f"/" for i in [10, 20, 30, 40, 50]]
+
+# smiles_data = [pd.read_csv(file)["smiles"] for file in file_paths]
+smiles_data = []
+for file in file_paths:
+    df = pd.read_csv(file)
+    smiles_data.append(df["smiles"].head(int(len(df) * 0.1)))  # 读取前10%行
+
+# 计算分子指纹的函数
+def calculate_fingerprints(smiles_list):
+    mols = [Chem.MolFromSmiles(smiles) for smiles in smiles_list]
+    fps = [AllChem.GetMorganFingerprintAsBitVect(mol, 2, nBits=1024) for mol in tqdm(mols, desc="计算分子指纹")]
+    return np.array(fps)
+
+# 定义 Tanimoto 核函数
+def tanimoto_kernel(X):
+    return 1 - pdist(X, metric="jaccard")
+
+# 初始化 t-SNE 分析器，显式设置初始化为 'random'，学习率为 'auto'，并启用 square_distances=True
+tsne = TSNE(n_components=2, metric="precomputed", random_state=42, init='random', learning_rate='auto', square_distances=True)
+
+# 创建大图用于绘制所有 t-SNE 结果
+plt.figure(figsize=(12, 10))
+
+# 依次处理每个文件中的 SMILES，并显示进度条
+for idx, smiles_list in enumerate(smiles_data):
+    print(f"处理文件 {idx + 1}/{len(smiles_data)} 的 t-SNE 分析")
+    
+    # 计算当前文件的分子指纹
+    fingerprints = calculate_fingerprints(smiles_list)
+    
+    # 计算 Tanimoto 距离
+    tanimoto_dist = squareform(tanimoto_kernel(fingerprints))
+    
+    # 进行 t-SNE 降维并显示进度条
+    print("进行 t-SNE 降维")
+    tsne_results = tsne.fit_transform(1 - tanimoto_dist)
+    
+    # 绘制当前 t-SNE 结果
+    plt.scatter(tsne_results[:, 0], tsne_results[:, 1], color=colors[idx], label=f'{(idx+1)*10}-bb-data')
+
+# 添加标题和标签
+plt.title("t-SNE Visualization of 5 Files (Top 10% Data)")
+plt.xlabel("t-SNE 1")
+plt.ylabel("t-SNE 2")
+plt.legend()  # 显示图例以区分不同文件
+
+# 保存为 SVG 格式
+output_path = ""
+plt.savefig(output_path, format='svg')
+print(f"图像已保存至 {output_path}")
+```
+图片参考 `T-SNE`
+![Ollama 部署图片](./tsne_visualization_01.svg)
