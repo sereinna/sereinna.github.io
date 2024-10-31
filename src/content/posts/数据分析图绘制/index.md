@@ -2,7 +2,7 @@
 title: 箱庭图绘制
 published: 2024-10-31
 description: "如何根据几个选定的颜色绘制还算好看的数据分析图"
-image: "./122688417_p0.jpg.png"
+image: "./122680362_p0.png"
 tags: [python,分子,图]
 category: "画图"
 draft: false
