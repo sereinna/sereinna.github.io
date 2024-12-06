@@ -55,6 +55,8 @@ set cartoon_gap_cutoff, 0
 
 # 调整表面透明度
 set transparency, 0.5, 3p3h_protein2
+set cartoon_transparency, 0.7, 6w8i_pre
+
 
 # 设置背景为白色
 bg_color white
@@ -80,6 +82,10 @@ select selected_residues, (chain D and resi 88 and resn D) or (chain D and resi 
 
 select check_residue, chain D and resi 88
 select selected_residues, (chain D and resi 88) or (chain D and resi 140)
+
+select selected_residues, resi 430 and name LYS
+
+select selected_residues, (resi 430 and name LYS) or (resi 314 and name ARG) or resi 312 or resi 481 or resi 477 or resi 475
 
 create new_object, chain D and resi 140 and resn N
 
@@ -129,3 +135,8 @@ png "E:/del/aaai/hanqun/smiles_picture/closeup_view.png", dpi=300
 ```
 ## 作图结果示例
 ![蛋白图](./5fl4_pdb.png)
+
+## 不显示H原子sticks
+![取消](./1.png)
+
+
