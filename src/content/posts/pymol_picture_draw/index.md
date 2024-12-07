@@ -74,12 +74,14 @@ png "E:/del/aaai/hanqun/smiles_picture/distant_view.png", dpi=300
 
 ```
 # x-ray设置
+```bash
 Plugin - Lighting Settings - Xray
+
 Draw/Ray 
     units 300
     reset
     without ray only 
-
+```
 
 ## 近景图
 
@@ -123,6 +125,10 @@ label interacting_residues, "%s%s" % (resn, resi)
 
 # 去除渲染阴影
 set ray_shadows, 0
+
+# 字体设置
+set label_font, 12
+set label_size, 20
 
 # 隐藏特定测量的标签（如有）
 hide labels, measure03
