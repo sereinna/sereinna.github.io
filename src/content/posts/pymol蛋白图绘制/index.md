@@ -70,7 +70,16 @@ ray 1000, 1000
 
 # 保存图片
 png "E:/del/aaai/hanqun/smiles_picture/distant_view.png", dpi=300
+
+
 ```
+# x-ray设置
+Plugin - Lighting Settings - Xray
+Draw/Ray 
+    units 300
+    reset
+    without ray only 
+
 
 ## 近景图
 
