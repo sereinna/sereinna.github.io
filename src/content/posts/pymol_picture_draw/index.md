@@ -146,7 +146,7 @@ set sphere_scale, 0.7, his_center or ligand_center
 ray 1000, 1000
 
 # 保存图片
-png "E:/del/aaai/hanqun/smiles_picture/closeup_view.png", dpi=300
+png "E:/del/closeup_view.png", dpi=300
 ```
 ## 作图结果示例
 ![蛋白图](./5fl4_pdb.png)
