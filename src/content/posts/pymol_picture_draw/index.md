@@ -159,6 +159,7 @@ png "E:/del/closeup_view.png", dpi=300
 ```bash
 #蛋白染色
 set_color custom_color1,[0.851, 0.867, 0.894]
+color custom_color, 5fl4_protein2
 #蛋白透明度
 set transparency, 0.25, 5fl4_protein2
 
