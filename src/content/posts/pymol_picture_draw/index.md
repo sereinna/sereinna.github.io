@@ -155,3 +155,16 @@ png "E:/del/closeup_view.png", dpi=300
 ![取消](./1.png)
 
 
+## serein only
+```bash
+#蛋白染色
+set_color custom_color1,[0.851, 0.867, 0.894]
+#蛋白透明度
+set transparency, 0.25, 5fl4_protein2
+
+#配体染色
+util.cba(36,"docked_1_1",_self=cmd)
+#残基染色
+util.cba(154,"obj02",_self=cmd)
+```
+
