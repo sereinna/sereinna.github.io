@@ -154,6 +154,14 @@ png "E:/del/closeup_view.png", dpi=300
 ## 不显示H原子sticks
 ![取消](./1.png)
 
+# 蛋白分析
+```bash
+#对比蛋白
+cealign 1，2
+
+#配体1和其他相互作用
+action-find-polar_contacts-to_other_atoms
+```
 
 ## serein only
 ```bash
