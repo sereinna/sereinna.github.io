@@ -72,6 +72,24 @@ ray 1000, 1000
 png "E:/del/aaai/hanqun/smiles_picture/distant_view.png", dpi=300
 
 
+# 设置字体
+
+set label_font_id, value
+0：位图字体（默认字体，兼容性较好）
+1：Sans（无衬线字体）
+2：Serif（衬线字体）
+3：Courier（等宽字体）
+
+# 字体大小
+set label_size, value
+
+
+# 调整 sticks（棒状表示） 的粗细
+set stick_radius, value
+alter selection, stick_radius = value
+rebuild
+
+
 ```
 # x-ray设置
 ```bash
