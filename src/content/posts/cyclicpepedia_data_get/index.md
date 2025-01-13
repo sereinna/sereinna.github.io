@@ -18,10 +18,15 @@ lang: ""
 
 ## 如何安装ChromeDriver
 
-chrome 下载 ChromeDriver 打开 https://googlechromelabs.github.io/chrome-for-testing/#stable
+chrome 下载 ChromeDriver 
+
+打开 `https://googlechromelabs.github.io/chrome-for-testing/#stable`
+
+
 移动其到chrome安装位置 C:\Program Files (x86)\Google\Chrome\Application
-设置:
-此电脑→右击属性→高级系统设置→环境变量→用户变量→Path→编辑→新建
+
+设置:此电脑→右击属性→高级系统设置→环境变量→用户变量→Path→编辑→新建
+
 path C:\Program Files (x86)\Google\Chrome\Application\
 
 ## 如何安装Selenium
