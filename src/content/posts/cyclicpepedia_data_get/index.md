@@ -1,7 +1,7 @@
 ---
-title: 如何使用linux爬取cyclicpepedia的序列信息
+title: Selenium获取cyclicpepedia信息
 published: 2025-01-13
-description: "如何使用linux，通过输入smiles，爬取获从clicpepeycdia获得的氨基酸的序列信息"
+description: "如何使用无头动态网页Selenium+ChromeDriver，通过输入smiles，爬取获从clicpepeycdia获得的氨基酸的序列信息"
 image: "./124366833_p0.png"
 tags: [Linux,氨基酸,web，python]
 category: "指南"
@@ -177,7 +177,5 @@ if __name__ == "__main__":
 
     # 调用多线程批量处理函数
     process_smiles_with_threads(input_csv, output_csv, max_threads=4)
-
-
 ```
 
