@@ -86,8 +86,10 @@ set label_size, value
 
 # 调整 sticks（棒状表示） 的粗细
 set stick_radius, value
-alter selection, stick_radius = value
-rebuild
+set stick_radius, 0.2
+
+set stick_radius, 0.2, xx
+set stick_radius, 0.2, site
 
 
 ```
