@@ -2,7 +2,7 @@
 title: pymol蛋白大小测量
 published: 2025-01-15
 description: "如何使用pymol显示蛋白/小分子的长宽高"
-image: "./122680362_p0.png"
+image: "./125132063_p0.png"
 tags: [pymol,图]
 category: "指南"
 draft: false
