@@ -24,10 +24,10 @@ lang: ""
 
 ```bash
 # 加载蛋白质结构
-load "E:/del/aaai/hanqun/smiles_picture/3p3h_protein.pdb", 3p3h_protein
+load "3p3h_protein.pdb", 3p3h_protein
 
 # 加载配体结构
-load "E:/del/aaai/hanqun/smiles_picture/docked_456.mol2", docked_456
+load "docked_456.mol2", docked_456
 
 # 复制蛋白质对象
 create 3p3h_protein2, 3p3h_protein
@@ -57,7 +57,6 @@ set cartoon_gap_cutoff, 0
 set transparency, 0.5, 3p3h_protein2
 set cartoon_transparency, 0.7, 6w8i_pre
 
-
 # 设置背景为白色
 bg_color white
 
@@ -71,6 +70,9 @@ ray 1000, 1000
 # 保存图片
 png "E:/del/aaai/hanqun/smiles_picture/distant_view.png", dpi=300
 
+```
+## 参数设置
+```bash
 
 # 设置字体
 
@@ -83,6 +85,17 @@ set label_font_id, value
 # 字体大小
 set label_size, value
 
+## Label设置
+label my_selection and name CA, "%s%s" % (resi,resn)
+
+PyMOL>label site and name CA, "%s-%s" % (resi,single[resn])  # 显示格式为"23-A"
+
+## 氢键计算
+distance hbond, (resn MG), (resi 263+267+271+128+132+198), mode=2, cutoff=3.5
+
+## 多重选中
+select binding_site, (resi 263+267+271+128+132+198
+
 
 # 调整 sticks（棒状表示） 的粗细
 set stick_radius, value
@@ -91,8 +104,8 @@ set stick_radius, 0.2
 set stick_radius, 0.2, xx
 set stick_radius, 0.2, site
 
-
 ```
+
 # x-ray设置
 ```bash
 Plugin - Lighting Settings - Xray
@@ -103,6 +116,14 @@ Draw/Ray
     without ray only 
 ```
 
+## 对齐
+```bash
+# 对齐蛋白
+cealign 1,18
+
+# 对齐分子
+align mobile, target
+```
 ## 近景图
 
 ```bash
@@ -119,8 +140,6 @@ select selected_residues, resi 430 and name LYS
 select selected_residues, (resi 430 and name LYS) or (resi 314 and name ARG) or resi 312 or resi 481 or resi 477 or resi 475
 
 create new_object, chain D and resi 140 and resn N
-
-
 
 
 # 选择与配体4Å范围内的相互作用残基
