@@ -116,6 +116,40 @@ Draw/Ray
     without ray only 
 ```
 
+## 保存
+```bash
+save L:/5t35/my_selection.pdb, my_selection
+```
+
+## 设置单氨基酸显示
+```bash
+PyMOL>single={'VAL':'V','ILE':'I','LEU':'L','GLU':'E','GLN':'Q','ASP':'D','ASN':'N','HIS':'H','TRP':'W','PHE':'F','TYR':'Y','ARG':'R','LYS':'K','SER':'S','THR':'T','MET':'M','ALA':'A','GLY':'G','PRO':'P','CYS':'C'}
+```
+
+## Label设置
+```bash
+label my_selection and name CA, "%s%s" % (resi,resn)
+
+PyMOL>label site and name CA, "%s-%s" % (resi,single[resn])  # 显示格式为"23-A"
+```
+
+## 氢键计算
+```bash
+distance hbond, (resn MG), (resi 263+267+271+128+132+198), mode=2, cutoff=3.5
+```
+
+## 多重选中
+```bash
+select binding_site, (resi 263+267+271+128+132+198)
+```
+
+## 测相互作用
+```bash
+Find
+ploar contacts
+to other atoms in object
+```
+
 ## 对齐
 ```bash
 # 对齐蛋白
