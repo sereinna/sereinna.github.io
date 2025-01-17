@@ -2,7 +2,7 @@
 title: PyMOL蛋白质结构可视化完整指南
 published: 2025-01-17
 description: "详细的PyMOL操作指南，包含基础设置到高级可视化的完整教程"
-image: "./125226669_p0.jpg"
+image: "./125226669_p0.png"
 tags: [pymol,图]
 category: "指南"
 draft: false
@@ -117,10 +117,8 @@ select interacting_residues, (3p3h_protein within 4 of docked_456)  # 选择4Å�
 # 复杂选择条件
 select selected_residues, (chain D and resi 88 and resn D) or (chain D and resi 140 and resn N)
 ```
-
 ## 3.2 结构分析
 用于分析分子间相互作用和结构特征。
-
 ```bash
 # 氢键分析
 distance hbond, (resn MG), (resi 263+267+271+128+132+198), mode=2, cutoff=3.5
@@ -136,12 +134,9 @@ distance hydrogen_bonds, (docked_456 and (name O+N)), (interacting_residues and 
 # 计算盐桥（距离小于4.0Å）
 distance salt_bridges, (docked_456 and (resn ARG+LYS)), (3p3h_protein and (resn ASP+GLU)), cutoff=4.0
 ```
-
 # 4. 场景制作
-
 ## 4.1 远景图制作
 展示整体结构的完整流程。
-
 ```bash
 # 1. 基础设置
 load "protein.pdb", protein
@@ -163,10 +158,8 @@ bg_color white
 ray 1000, 1000
 png "distant_view.png", dpi=300
 ```
-
 ## 4.2 近景图制作
 展示具体相互作用的详细流程。
-
 ```bash
 # 1. 选择和显示相互作用区域
 select interacting_residues, (protein within 4 of ligand)
@@ -185,11 +178,8 @@ set label_size, 20
 ray 1000, 1000
 png "closeup_view.png", dpi=300
 ```
-
 # 5. 其他实用操作
-
 ## 5.1 文件操作
-
 ```bash
 # 保存选中的结构
 save "output.pdb", selection_name
@@ -197,9 +187,7 @@ save "output.pdb", selection_name
 # 保存会话
 save "session.pse"
 ```
-
 ## 5.2 高级显示设置
-
 ```bash
 # X-ray效果设置
 Plugin - Lighting Settings - Xray
@@ -208,4 +196,3 @@ Plugin - Lighting Settings - Xray
 set ray_trace_mode, 1
 set ray_shadows, 0
 ```
-
