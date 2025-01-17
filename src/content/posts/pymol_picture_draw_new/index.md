@@ -10,16 +10,17 @@ lang: ""
 ---
 
 
+:::tip
+准备工作 蛋白质 `pdb`，配体 `mol2`，画图软件 `pymol`
+:::
 
-# PyMOL蛋白质结构可视化完整指南
-
-## 前言
+# 前言
 
 本指南提供了使用PyMOL进行蛋白质结构可视化的完整操作流程，从基础加载到高级渲染都有详细说明。所有代码块都可以直接复制使用，注意替换相关文件名和路径。
 
-## 1. 基础操作
+# 1. 基础操作
 
-### 1.1 结构加载
+## 1.1 结构加载
 结构加载是PyMOL使用的第一步，支持多种分子结构文件格式。
 
 ```bash
@@ -33,7 +34,7 @@ load "docked_456.mol2", docked_456     # 加载MOL2格式的配体结构
 create 3p3h_protein2, 3p3h_protein     # 创建蛋白质结构的副本
 ```
 
-### 1.2 基本显示模式
+## 1.2 基本显示模式
 PyMOL提供多种分子显示模式，可以组合使用创建更好的可视化效果。
 
 ```bash
@@ -47,9 +48,9 @@ hide lines, all              # 隐藏所有对象的线框显示
 hide everything, all         # 隐藏所有显示模式
 ```
 
-## 2. 视觉参数设置
+# 2. 视觉参数设置
 
-### 2.1 颜色调整
+## 2.1 颜色调整
 合理的颜色设置能够突出重要结构并提高可视化效果。
 
 ```bash
@@ -66,7 +67,7 @@ util.cba(36, "docked_1_1", _self=cmd)    # 使用色谱着色方案
 util.cba(154, "obj02", _self=cmd)         # 对特定对象使用色谱
 ```
 
-### 2.2 透明度和显示效果
+## 2.2 透明度和显示效果
 调整透明度可以同时展示多个结构层次。
 
 ```bash
@@ -81,7 +82,7 @@ set stick_radius, 0.2 , xx                       # 设置棍状模型粗细
 bg_color white                                 # 设置背景颜色为白色
 ```
 
-### 2.3 标签和字体设置
+## 2.3 标签和字体设置
 清晰的标签对于结构说明至关重要。
 
 ```bash
@@ -100,9 +101,9 @@ single={'VAL':'V','ILE':'I','LEU':'L','GLU':'E','GLN':'Q',
         'MET':'M','ALA':'A','GLY':'G','PRO':'P','CYS':'C'}
 ```
 
-## 3. 结构分析工具
+# 3. 结构分析工具
 
-### 3.1 残基选择
+## 3.1 残基选择
 精确的残基选择是结构分析的基础。
 
 ```bash
@@ -117,7 +118,7 @@ select interacting_residues, (3p3h_protein within 4 of docked_456)  # 选择4Å�
 select selected_residues, (chain D and resi 88 and resn D) or (chain D and resi 140 and resn N)
 ```
 
-### 3.2 结构分析
+## 3.2 结构分析
 用于分析分子间相互作用和结构特征。
 
 ```bash
@@ -136,9 +137,9 @@ distance hydrogen_bonds, (docked_456 and (name O+N)), (interacting_residues and 
 distance salt_bridges, (docked_456 and (resn ARG+LYS)), (3p3h_protein and (resn ASP+GLU)), cutoff=4.0
 ```
 
-## 4. 场景制作
+# 4. 场景制作
 
-### 4.1 远景图制作
+## 4.1 远景图制作
 展示整体结构的完整流程。
 
 ```bash
@@ -163,7 +164,7 @@ ray 1000, 1000
 png "distant_view.png", dpi=300
 ```
 
-### 4.2 近景图制作
+## 4.2 近景图制作
 展示具体相互作用的详细流程。
 
 ```bash
@@ -185,9 +186,9 @@ ray 1000, 1000
 png "closeup_view.png", dpi=300
 ```
 
-## 5. 其他实用操作
+# 5. 其他实用操作
 
-### 5.1 文件操作
+## 5.1 文件操作
 
 ```bash
 # 保存选中的结构
@@ -197,7 +198,7 @@ save "output.pdb", selection_name
 save "session.pse"
 ```
 
-### 5.2 高级显示设置
+## 5.2 高级显示设置
 
 ```bash
 # X-ray效果设置
