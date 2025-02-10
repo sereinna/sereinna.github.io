@@ -248,5 +248,20 @@ set transparency, 0.25, 5fl4_protein2
 util.cba(36,"docked_1_1",_self=cmd)
 #残基染色
 util.cba(154,"obj02",_self=cmd)
+
 ```
 
+## 添加基团
+```bash
+#修改分子的基团
+select target, chain P and resi 10
+
+fragment cyclopropane 
+
+#查看原子
+create protein, protein or cyclopropane
+
+delete cyclopropane
+
+ctrl T 添加键
+```
