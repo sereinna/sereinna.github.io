@@ -41,21 +41,21 @@ fi
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/public/home/LZUZhoupp/miniconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+__conda_setup="$('/public/home/LZUZhou/miniconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
 if [ $? -eq 0 ]; then
     eval "$__conda_setup"
 else
-    if [ -f "/public/home/LZUZhoupp/miniconda3/etc/profile.d/conda.sh" ]; then
-        . "/public/home/LZUZhoupp/miniconda3/etc/profile.d/conda.sh"
+    if [ -f "/public/home/LZUZhou/miniconda3/etc/profile.d/conda.sh" ]; then
+        . "/public/home/LZUZhou/miniconda3/etc/profile.d/conda.sh"
     else
-        export PATH="/public/home/LZUZhoupp/miniconda3/bin:$PATH"
+        export PATH="/public/home/LZUZhou/miniconda3/bin:$PATH"
     fi
 fi
 unset __conda_setup
 # <<< conda initialize <<<
 
 # Add Gaussian 16 environment variables
-export g16root=/public/home/LZUZhoupp
+export g16root=/public/home/LZU
 export GAUSS_EXEDIR=$g16root/g16
 export GAUSS_SCRDIR=$g16root/g16/scr
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$g16root/g16

@@ -1,6 +1,6 @@
 ---
 title: 这里写标题
-published: 2024-09-17
+published: 2025-09-17
 description: "这是一个撰写模板"
 image: "./1.jpg"
 tags: [Linux,del,这里写标签]
