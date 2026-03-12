@@ -431,4 +431,3 @@ python end
 ![19GS_pred36](./02_19GS_19GS_pred36_AB.png)
 ![13SB_pred46](./15_13SB_13SB_pred46_AB.png)
 ![1AXE_pred37](./20_1AXE_1AXE_pred37_AB.png)
-![部署图片](./1.jpg)
