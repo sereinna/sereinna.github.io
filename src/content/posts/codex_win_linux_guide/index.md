@@ -2,30 +2,23 @@
 title: Codex 在 Windows 和 Linux 上的调用指南
 published: 2026-05-24
 description: "一篇写清楚 Codex CLI、VS Code 扩展、config.toml、Windows 原生与 Linux/WSL 使用方式的入门指南。"
-image: "./cover.png"
+image: "./145065828_p0.jpg"
 tags: [Codex, Windows, Linux, VSCode, 指南]
 category: "AI工具"
 draft: false
 lang: ""
 ---
 
-> 插图说明：本文插图为原创 AI 生成的二次元风格配图。
-
 ![插图1](./145065828_p0.jpg)
-
-![插图2](./145089401_p0.jpg)
 
 ## 前言
 
 :::tip
-本文按 **2026-05-24** 可查到的 OpenAI 官方 Codex 文档整理。  
 如果你主要在 Linux 上工作，当前最稳的入口是 **Codex CLI** 和 **VS Code 侧边栏扩展**。  
 如果你在 Windows 上工作，优先推荐 **PowerShell 原生运行**；只有在你依赖 Linux 工具链时，再切换到 **WSL2**。
 :::
 
 根据 OpenAI 官方 Quickstart，Codex 桌面 App 页面目前提供 **Windows 下载**，Linux 仍显示 **Get notified for Linux**。这意味着在 Linux 上，现阶段更适合直接使用 CLI 和 IDE 扩展，而不是等待原生桌面版。
-
-![Codex 插图](./cover.png)
 
 ## 一、Codex 目前有哪些入口
 
@@ -575,3 +568,5 @@ codex mcp list
 - VS Code Marketplace: https://marketplace.visualstudio.com/items?itemName=OpenAI.chatgpt
 - OpenAI Codex install.md: https://github.com/openai/codex/blob/main/docs/install.md
 - OpenAI Codex Releases: https://github.com/openai/codex/releases
+
+![插图2](./145089401_p0.jpg)
